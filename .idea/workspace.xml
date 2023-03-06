@@ -4,11 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b115fbeb-4b0f-460d-ae44-21af78116e64" name="Changes" comment="" />
+    <list default="true" id="b115fbeb-4b0f-460d-ae44-21af78116e64" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/Guess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/Guess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/MultTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/MultTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/Pell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/Pell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/Stars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/Stars.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/my/ylab/PellTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/my/ylab/PellTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2MapqBlvehCC9RlIQedKxPib9wW" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -16,13 +38,114 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/IDEA_project/Simple Chatty Bot/Simple Chatty Bot&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="my.ylab" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.PellTest">
+    <configuration name="Guess" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="my.ylab.Guess" />
+      <module name="YLab_Tasks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="my.ylab.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MultTable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="my.ylab.MultTable" />
+      <module name="YLab_Tasks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="my.ylab.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Pell" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="my.ylab.Pell" />
+      <module name="YLab_Tasks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="my.ylab.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Stars" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="my.ylab.Stars" />
+      <module name="YLab_Tasks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="my.ylab.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PellTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="YLab_Tasks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="my.ylab.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="my.ylab" />
+      <option name="MAIN_CLASS_NAME" value="my.ylab.PellTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Guess" />
+      <item itemvalue="Application.MultTable" />
+      <item itemvalue="Application.Pell" />
+      <item itemvalue="Application.Stars" />
+      <item itemvalue="JUnit.PellTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.PellTest" />
+        <item itemvalue="Application.Pell" />
+        <item itemvalue="Application.Stars" />
+        <item itemvalue="Application.Guess" />
+        <item itemvalue="Application.MultTable" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -31,8 +154,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678015736806</updated>
+      <workItem from="1678015738067" duration="8626000" />
+      <workItem from="1678033464010" duration="1697000" />
+      <workItem from="1678088940838" duration="2019000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -44,5 +173,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/YLab_Tasks$Pell.ic" NAME="Pell Coverage Results" MODIFIED="1678032926899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>my.ylab.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/YLab_Tasks$Guess.ic" NAME="Guess Coverage Results" MODIFIED="1678032703362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>my.ylab.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/YLab_Tasks$Stars.ic" NAME="Stars Coverage Results" MODIFIED="1678032852016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>my.ylab.*</FILTER>
+    </SUITE>
   </component>
 </project>
