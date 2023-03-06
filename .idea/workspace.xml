@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b115fbeb-4b0f-460d-ae44-21af78116e64" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/Guess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/Guess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/MultTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/MultTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/Pell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/Pell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/Stars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/Stars.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/my/ylab/PellTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/my/ylab/PellTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="b115fbeb-4b0f-460d-ae44-21af78116e64" name="Changes" comment="Initial commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,7 +53,7 @@
       <recent name="my.ylab" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PellTest">
+  <component name="RunManager" selected="Application.Stars">
     <configuration name="Guess" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="my.ylab.Guess" />
       <module name="YLab_Tasks" />
@@ -138,11 +130,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PellTest" />
-        <item itemvalue="Application.Pell" />
         <item itemvalue="Application.Stars" />
-        <item itemvalue="Application.Guess" />
+        <item itemvalue="Application.Pell" />
         <item itemvalue="Application.MultTable" />
+        <item itemvalue="Application.Guess" />
+        <item itemvalue="JUnit.PellTest" />
       </list>
     </recent_temporary>
   </component>
@@ -156,8 +148,16 @@
       <updated>1678015736806</updated>
       <workItem from="1678015738067" duration="8626000" />
       <workItem from="1678033464010" duration="1697000" />
-      <workItem from="1678088940838" duration="2019000" />
+      <workItem from="1678088940838" duration="2711000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1678091046946</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1678091046946</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,6 +173,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/YLab_Tasks$Pell.ic" NAME="Pell Coverage Results" MODIFIED="1678032926899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
