@@ -1,4 +1,4 @@
-package my.ylab;
+package my.ylab.homework01;
 
 public class MultTable {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package my.ylab;
+package my.ylab.homework01;
 
 import org.junit.jupiter.api.Test;
 
