@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b115fbeb-4b0f-460d-ae44-21af78116e64" name="Changes" comment="Fixed">
+      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework03/datedmap/DateMapTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework03/datedmap/DatedMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework03/datedmap/DatedMapImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework03/transliterator/Transliterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework03/transliterator/TransliteratorImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework03/transliterator/TransliteratorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework02/accumulator/StatsAccumulatorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework02/accumulator/StatsAccumulatorImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework02/complex/ComplexNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework02/complex/ComplexNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework02/sequences/SequencesImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework02/sequences/SequencesImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework02/validator/SnilsValidatorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework02/validator/SnilsValidatorImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/my/ylab/homework02/complex/ComplexNumberTaskTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/my/ylab/homework02/complex/ComplexNumberTaskTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +40,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2MapqBlvehCC9RlIQedKxPib9wW" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -149,11 +152,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SequencesTest" />
-        <item itemvalue="Application.StatsAccumulatorTest" />
-        <item itemvalue="Application.ComplexNumbersTest" />
         <item itemvalue="JUnit.my.ylab.homework02 in YLab_Tasks" />
         <item itemvalue="JUnit.SnilsValidatorTaskTest" />
+        <item itemvalue="Application.StatsAccumulatorTest" />
+        <item itemvalue="Application.ComplexNumbersTest" />
+        <item itemvalue="Application.SequencesTest" />
       </list>
     </recent_temporary>
   </component>
