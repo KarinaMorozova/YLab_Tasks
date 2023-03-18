@@ -1,11 +1,10 @@
 package my.ylab.homework02.sequences;
 
-import java.util.Arrays;
-
 public class SequencesImpl implements Sequences {
     public void print(int[] array) {
-        Arrays.stream((array)).forEach(System.out::println);
-        System.out.println();
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i]);
+        }
     }
 
     @Override

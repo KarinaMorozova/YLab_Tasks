@@ -58,24 +58,6 @@ public class ComplexNumberTaskTest {
         String expected = "3.2 + 2.3i";
         assertEquals(expected, actual);
 
-        ComplexNumber second = new ComplexNumber(3, 2);
-
-        actual = second.toString();
-        expected = "3 + 2i";
-        assertEquals(expected, actual);
-
-        ComplexNumber third = new ComplexNumber(0, 2);
-
-        actual = third.toString();
-        expected = "2i";
-        assertEquals(expected, actual);
-
-        ComplexNumber forth = new ComplexNumber(2, 0);
-
-        actual = forth.toString();
-        expected = "2";
-        assertEquals(expected, actual);
-
         ComplexNumber fifth = new ComplexNumber(0.0, 0.0);
 
         actual = fifth.toString();

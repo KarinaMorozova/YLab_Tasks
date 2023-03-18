@@ -1,11 +1,10 @@
 package my.ylab.homework02.complex;
 
-import java.math.BigDecimal;
 import java.util.Objects;
 
 public class ComplexNumber {
-    private double real;
-    private double imaginary;
+    private final double real;
+    private final double imaginary;
 
     public ComplexNumber(double real, double imaginary) {
         this.real = real;
@@ -23,14 +22,6 @@ public class ComplexNumber {
 
     public double getImaginary() {
         return this.imaginary;
-    }
-
-    public void setReal(double real) {
-        this.real = real;
-    }
-
-    public void setImaginary(double imaginary) {
-        this.imaginary = imaginary;
     }
 
     public ComplexNumber add(ComplexNumber second) {
@@ -66,29 +57,14 @@ public class ComplexNumber {
     public String toString() {
         String result = "";
         if (this.real != 0) {
-            // выделение дробной части
-            BigDecimal bd = BigDecimal.valueOf((this.real - Math.floor(this.real)) * 100);
-
-            if (bd.compareTo(BigDecimal.ZERO) == 0) {
-                result = (int) this.real + "";
-            }
-            else {
-                result = this.real + "";
-            }
+            result = this.real + "";
         }
         if (this.imaginary != 0) {
             if (this.real != 0) {
                 result = result + " + ";
             }
 
-            // выделение дробной части
-            BigDecimal bd = BigDecimal.valueOf((this.imaginary - Math.floor(this.imaginary)) * 100);
-
-            if (bd.compareTo(BigDecimal.ZERO) == 0) {
-                result = result + (int) this.imaginary + "i";
-            } else {
-                result = result + this.imaginary + "i";
-            }
+            result = result + this.imaginary + "i";
         }
 
         if (this.real == 0 && this.imaginary == 0) {
