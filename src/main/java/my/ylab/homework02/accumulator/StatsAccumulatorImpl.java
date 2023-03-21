@@ -20,7 +20,7 @@ public class StatsAccumulatorImpl implements StatsAccumulator{
     @Override
     public void add(int value) {
         this.count++;
-        this.avg = (this.avg + value)/this.count;
+        this.avg = (this.avg * (this.count - 1) + value)/this.count;
         this.min = (this.min != Integer.MIN_VALUE) ? Math.min(this.min, value) : value;
         this.max = (this.max != Integer.MAX_VALUE) ? Math.max(this.max, value) : value;
     }
