@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b115fbeb-4b0f-460d-ae44-21af78116e64" name="Changes" comment="Fixed">
+    <list default="true" id="b115fbeb-4b0f-460d-ae44-21af78116e64" name="Changes" comment="Init commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework02/accumulator/StatsAccumulatorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework02/accumulator/StatsAccumulatorImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework02/complex/ComplexNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework02/complex/ComplexNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework02/sequences/SequencesImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework02/sequences/SequencesImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework02/validator/SnilsValidatorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework02/validator/SnilsValidatorImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/my/ylab/homework02/complex/ComplexNumberTaskTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/my/ylab/homework02/complex/ComplexNumberTaskTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework03/filesort/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework03/filesort/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,13 +35,16 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2MapqBlvehCC9RlIQedKxPib9wW" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
@@ -53,11 +52,12 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/IDEA_project/Simple Chatty Bot/Simple Chatty Bot&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propDebugger&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -71,13 +71,13 @@
       <recent name="my.ylab" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SequencesTest">
-    <configuration name="ComplexNumbersTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="my.ylab.homework02.complex.ComplexNumbersTest" />
+  <component name="RunManager" selected="Application.Test">
+    <configuration name="DateMapTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="my.ylab.homework03.datedmap.DateMapTest" />
       <module name="YLab_Tasks" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="my.ylab.homework02.complex.*" />
+          <option name="PATTERN" value="my.ylab.homework03.datedmap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -85,12 +85,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SequencesTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="my.ylab.homework02.sequences.SequencesTest" />
+    <configuration name="OrgStructureParserTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="my.ylab.homework03.structure.OrgStructureParserTest" />
       <module name="YLab_Tasks" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="my.ylab.homework02.sequences.*" />
+          <option name="PATTERN" value="my.ylab.homework03.structure.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -98,12 +98,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StatsAccumulatorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="my.ylab.homework02.accumulator.StatsAccumulatorTest" />
+    <configuration name="PasswordValidatorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="my.ylab.homework03.passvalidator.PasswordValidatorTest" />
       <module name="YLab_Tasks" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="my.ylab.homework02.accumulator.*" />
+          <option name="PATTERN" value="my.ylab.homework03.passvalidator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,49 +111,46 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SnilsValidatorTaskTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="my.ylab.homework03.filesort.Test" />
       <module name="YLab_Tasks" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="my.ylab.homework02.validator.*" />
+          <option name="PATTERN" value="my.ylab.homework03.filesort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="my.ylab.homework02.validator" />
-      <option name="MAIN_CLASS_NAME" value="my.ylab.homework02.validator.SnilsValidatorTaskTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="my.ylab.homework02 in YLab_Tasks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TransliteratorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="my.ylab.homework03.transliterator.TransliteratorTest" />
       <module name="YLab_Tasks" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="my.ylab.homework02.*" />
+          <option name="PATTERN" value="my.ylab.homework03.transliterator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="my.ylab.homework02" />
-      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.SequencesTest" />
-      <item itemvalue="Application.ComplexNumbersTest" />
-      <item itemvalue="Application.StatsAccumulatorTest" />
-      <item itemvalue="JUnit.SnilsValidatorTaskTest" />
-      <item itemvalue="JUnit.my.ylab.homework02 in YLab_Tasks" />
+      <item itemvalue="Application.TransliteratorTest" />
+      <item itemvalue="Application.Test" />
+      <item itemvalue="Application.OrgStructureParserTest" />
+      <item itemvalue="Application.DateMapTest" />
+      <item itemvalue="Application.PasswordValidatorTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SequencesTest" />
-        <item itemvalue="Application.StatsAccumulatorTest" />
-        <item itemvalue="Application.ComplexNumbersTest" />
-        <item itemvalue="JUnit.my.ylab.homework02 in YLab_Tasks" />
-        <item itemvalue="JUnit.SnilsValidatorTaskTest" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.TransliteratorTest" />
+        <item itemvalue="Application.OrgStructureParserTest" />
+        <item itemvalue="Application.PasswordValidatorTest" />
+        <item itemvalue="Application.DateMapTest" />
       </list>
     </recent_temporary>
   </component>
@@ -174,6 +171,14 @@
       <workItem from="1678788783803" duration="13682000" />
       <workItem from="1678866602453" duration="8415000" />
       <workItem from="1679127004641" duration="2828000" />
+      <workItem from="1679213418831" duration="21086000" />
+      <workItem from="1679298478923" duration="10592000" />
+      <workItem from="1679319238685" duration="18648000" />
+      <workItem from="1679378463555" duration="16665000" />
+      <workItem from="1679433413402" duration="2540000" />
+      <workItem from="1679476441826" duration="2021000" />
+      <workItem from="1679566541256" duration="1923000" />
+      <workItem from="1679597106964" duration="1247000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1678091046946</created>
@@ -217,7 +222,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678877370635</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Init commit">
+      <created>1679141951764</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1679141951764</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Init commit">
+      <created>1679435350441</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1679435350441</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,7 +256,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed" />
+    <MESSAGE value="Init commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init commit" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/YLab_Tasks$SequencesTest.ic" NAME="SequencesTest Coverage Results" MODIFIED="1678723676474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
