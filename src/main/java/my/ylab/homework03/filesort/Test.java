@@ -8,7 +8,7 @@ public class Test {
     public static void main(String[] args) throws IOException {
         long start = System.currentTimeMillis();
 
-        File dataFile = new Generator().generate("./src/main/java/my/ylab/homework03/filesort/resources/data.txt", 375_000_000);
+        File dataFile = new Generator().generate("./src/main/java/my/ylab/homework03/filesort/resources/data.txt", 375_000_0);
         System.out.println(new Validator(dataFile).isSorted()); // false
         long mid = System.currentTimeMillis() - start;
         System.out.println("Генерация данных за " + TimeUnit.MILLISECONDS.toMinutes(mid) + ":" + TimeUnit.MILLISECONDS.toSeconds(mid) % 60);

@@ -10,7 +10,18 @@ public class Sorter {
     private List<File> outputs = new ArrayList<>();
     private Path tempDir;
 
-    public void setTempDirectory(File datafile) throws IOException {
+    public File sortFile(File dataFile) throws IOException {
+        setTempDirectory(dataFile);
+        splitFile(dataFile);
+
+        File sortedFile = new File(dataFile.getParent() + "\\sorted.txt");
+        merge(sortedFile);
+        tempDir.toFile().deleteOnExit();
+
+        return sortedFile;
+    }
+
+    private void setTempDirectory(File datafile) throws IOException {
         tempDir = Files.createTempDirectory(Path.of(datafile.getParent()), "tempOuts");
 
         File directory = new File(tempDir.toString());
@@ -27,7 +38,7 @@ public class Sorter {
             pw.flush();
         }
     }
-    public void splitFile(File file) {
+    private void splitFile(File file) {
         outputs.clear();
         List<Long> longs = new ArrayList<>();
 
@@ -65,7 +76,7 @@ public class Sorter {
         }
     }
 
-    public void merge(File file) {
+    private void merge(File file) {
         Map<Long, Scanner> map = new HashMap<>();
         List<Scanner> scanners = new ArrayList<>();
 
@@ -109,15 +120,6 @@ public class Sorter {
 
     }
 
-    public File sortFile(File dataFile) throws IOException {
-        setTempDirectory(dataFile);
-        splitFile(dataFile);
 
-        File sortedFile = new File(dataFile.getParent() + "\\sorted.txt");
-        merge(sortedFile);
-        tempDir.toFile().deleteOnExit();
-
-        return sortedFile;
-    }
 }
 

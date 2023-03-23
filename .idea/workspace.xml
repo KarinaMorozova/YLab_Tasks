@@ -5,30 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b115fbeb-4b0f-460d-ae44-21af78116e64" name="Changes" comment="Init commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework03/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework03/filesort/Generator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework03/filesort/Sorter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework03/filesort/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework03/filesort/Validator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework03/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework03/img_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework03/img_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework03/passvalidator/PasswordValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework03/passvalidator/PasswordValidatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework03/passvalidator/exception/WrongLoginException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework03/passvalidator/exception/WrongPasswordException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework03/structure/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework03/structure/OrgStructureParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework03/structure/OrgStructureParserImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework03/structure/OrgStructureParserTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework03/structure/resources/data.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/my/ylab/homework03/TransliteratorTaskTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework02/accumulator/StatsAccumulatorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework02/accumulator/StatsAccumulatorImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework03/datedmap/DateMapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework03/datedmap/DateMapTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework03/datedmap/DatedMapImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework03/datedmap/DatedMapImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework03/transliterator/TransliteratorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework03/transliterator/TransliteratorImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework03/transliterator/TransliteratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework03/transliterator/TransliteratorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework03/filesort/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework03/filesort/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +71,7 @@
       <recent name="my.ylab" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TransliteratorTest">
+  <component name="RunManager" selected="Application.Test">
     <configuration name="DateMapTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="my.ylab.homework03.datedmap.DateMapTest" />
       <module name="YLab_Tasks" />
@@ -168,11 +146,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.TransliteratorTest" />
         <item itemvalue="Application.OrgStructureParserTest" />
         <item itemvalue="Application.PasswordValidatorTest" />
         <item itemvalue="Application.DateMapTest" />
-        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +175,10 @@
       <workItem from="1679298478923" duration="10592000" />
       <workItem from="1679319238685" duration="18648000" />
       <workItem from="1679378463555" duration="16665000" />
-      <workItem from="1679433413402" duration="1708000" />
+      <workItem from="1679433413402" duration="2540000" />
+      <workItem from="1679476441826" duration="2021000" />
+      <workItem from="1679566541256" duration="1923000" />
+      <workItem from="1679597106964" duration="1247000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1678091046946</created>
@@ -248,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679141951764</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Init commit">
+      <created>1679435350441</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1679435350441</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
