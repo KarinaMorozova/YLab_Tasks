@@ -52,12 +52,12 @@ public class MovieLoaderImpl implements MovieLoader {
         movie.setYear((!record[0].equals("")) ? Integer.parseInt(record[0]) : null);
         movie.setLength((!record[1].equals("")) ? Integer.parseInt(record[1]) : null);
 
-        movie.setTitle(record[2]);
-        movie.setSubject(record[3]);
+        movie.setTitle((!record[2].equals("")) ? record[2] : null);
+        movie.setSubject((!record[3].equals("")) ? record[3] : null);
 
-        movie.setActors(record[4]);
-        movie.setActress(record[5]);
-        movie.setDirector(record[6]);
+        movie.setActors((!record[4].equals("")) ? record[4] : null);
+        movie.setActress((!record[5].equals("")) ? record[5] : null);
+        movie.setDirector((!record[6].equals("")) ? record[6] : null);
 
         movie.setPopularity((!record[7].equals("")) ? Integer.parseInt(record[7]) : null);
         movie.setAwards(record[8].equals("Yes"));

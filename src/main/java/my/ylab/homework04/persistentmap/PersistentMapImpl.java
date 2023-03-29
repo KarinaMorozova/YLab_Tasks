@@ -142,5 +142,15 @@ public class PersistentMapImpl implements PersistentMap {
     public void clear() {
         dataMap.clear();
         pMap.clear();
+
+        String deleteStr = "delete from persistent_map pm where pm.map_name = '%s';";
+        try (Connection connection = this.dataSource.getConnection();
+             Statement statement = connection.createStatement() ) {
+            statement.execute(String.format(deleteStr, currentMapName));
+
+            init(currentMapName);
+        } catch (SQLException e) {
+            System.err.format("SQL State: %s\n%s", e.getSQLState(), e.getMessage());
+        }
     }
 }
