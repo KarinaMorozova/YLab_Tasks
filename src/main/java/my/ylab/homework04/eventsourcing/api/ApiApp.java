@@ -1,13 +1,11 @@
 package my.ylab.homework04.eventsourcing.api;
 
-import com.rabbitmq.tools.json.JSONUtil;
 import my.ylab.homework04.eventsourcing.EndPoint;
 import my.ylab.homework04.eventsourcing.Person;
 
 import java.util.List;
 
 public class ApiApp extends EndPoint {
-
     public ApiApp(String queue_name) {
         super(queue_name);
     }

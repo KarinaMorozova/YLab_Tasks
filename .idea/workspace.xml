@@ -6,11 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="b115fbeb-4b0f-460d-ae44-21af78116e64" name="Changes" comment="Init commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/DbUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/DbUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework04/eventsourcing/api/ApiApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework04/eventsourcing/api/ApiApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework04/eventsourcing/db/DbApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework04/eventsourcing/db/DbApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/api/ApiApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/api/ApiApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/api/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/api/Config.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/api/PersonApiImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/api/PersonApiImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/db/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/db/Config.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/db/DbApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/db/DbApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/db/DbController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/db/DbController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/db/DbService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/db/DbService.java" afterDir="false" />
@@ -90,7 +89,7 @@
       <recent name="my.ylab.homework05.eventsourcing.api" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DbApp">
+  <component name="RunManager" selected="Application.ApiApp">
     <configuration name="ApiApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="my.ylab.homework05.eventsourcing.api.ApiApp" />
       <module name="YLab_Tasks" />
@@ -117,12 +116,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrgStructureParserTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="my.ylab.homework03.structure.OrgStructureParserTest" />
+    <configuration name="my.ylab.homework04.eventsourcing.api.ApiApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="my.ylab.homework04.eventsourcing.api.ApiApp" />
       <module name="YLab_Tasks" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="my.ylab.homework03.structure.*" />
+          <option name="PATTERN" value="my.ylab.homework04.eventsourcing.api.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,12 +129,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="my.ylab.homework03.filesort.Test" />
+    <configuration name="my.ylab.homework04.eventsourcing.db.DbApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="my.ylab.homework04.eventsourcing.db.DbApp" />
       <module name="YLab_Tasks" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="my.ylab.homework03.filesort.*" />
+          <option name="PATTERN" value="my.ylab.homework04.eventsourcing.db.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,33 +142,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TransliteratorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="my.ylab.homework03.transliterator.TransliteratorTest" />
+    <configuration name="BeanTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="YLab_Tasks" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="my.ylab.homework03.transliterator.*" />
+          <option name="PATTERN" value="my.ylab.homework05.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="my.ylab.homework05" />
+      <option name="MAIN_CLASS_NAME" value="my.ylab.homework05.BeanTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.DbApp" />
+      <item itemvalue="Application.my.ylab.homework04.eventsourcing.api.ApiApp" />
+      <item itemvalue="Application.my.ylab.homework04.eventsourcing.db.DbApp" />
       <item itemvalue="Application.ApiApp" />
-      <item itemvalue="Application.TransliteratorTest" />
-      <item itemvalue="Application.Test" />
-      <item itemvalue="Application.OrgStructureParserTest" />
+      <item itemvalue="JUnit.BeanTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DbApp" />
         <item itemvalue="Application.ApiApp" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.TransliteratorTest" />
-        <item itemvalue="Application.OrgStructureParserTest" />
+        <item itemvalue="Application.DbApp" />
+        <item itemvalue="Application.my.ylab.homework04.eventsourcing.api.ApiApp" />
+        <item itemvalue="Application.my.ylab.homework04.eventsourcing.db.DbApp" />
+        <item itemvalue="JUnit.BeanTest" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +203,7 @@
       <workItem from="1680184083376" duration="1177000" />
       <workItem from="1680185361496" duration="3193000" />
       <workItem from="1680249953443" duration="8472000" />
-      <workItem from="1680336427703" duration="22821000" />
+      <workItem from="1680336427703" duration="33990000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1678091046946</created>
@@ -281,7 +282,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680365226857</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Init commit">
+      <created>1680376292730</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1680376292730</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Init commit">
+      <created>1680376461145</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1680376461145</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,27 +318,6 @@
     <MESSAGE value="Fixed" />
     <MESSAGE value="Init commit" />
     <option name="LAST_COMMIT_MESSAGE" value="Init commit" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/db/DbController.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/db/Config.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/db/DbApp.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/YLab_Tasks$SequencesTest.ic" NAME="SequencesTest Coverage Results" MODIFIED="1678723676474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

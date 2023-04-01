@@ -10,7 +10,7 @@ import java.util.List;
  * ApiApp
  *
  * <p>
- * Гырк мырк пырк
+ * Приложение, работающее с базой данных через брокера сообщений
  *
  * @author KarinaMorozova
  * 31.03.2023
@@ -23,11 +23,34 @@ public class ApiApp {
         PersonApi personApi = applicationContext.getBean(PersonApi.class);
 
         personApi.savePerson(1L, "Arya", "Stark", "Eddard");
+        Thread.sleep(1000);
 
-        List<Person> list = personApi.findAll();
-        for (Person p: list) {
+        personApi.savePerson(2L, "Sansa", "Stark", "Eddard");
+        Thread.sleep(1000);
+
+        personApi.savePerson(3L, "Cersei", "Lannister", "Tywin");
+        Thread.sleep(1000);
+
+        System.out.println("List of players");
+        List<Person> persons = personApi.findAll();
+        for (Person p: persons) {
             System.out.println(p);
         }
+
+        personApi.savePerson(2L, "Jon", "Snow", "Rhaegar");
+        Thread.sleep(1000);
+
+        personApi.deletePerson(3L);
+        Thread.sleep(1000);
+
+        System.out.println("Updated list of players");
+        persons = personApi.findAll();
+        for (Person p: persons) {
+            System.out.println(p);
+        }
+
+        Thread.sleep(500);
+        personApi.deletePerson(4L);
     }
 }
 

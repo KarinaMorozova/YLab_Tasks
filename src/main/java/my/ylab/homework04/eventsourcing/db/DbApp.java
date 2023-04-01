@@ -12,12 +12,14 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class DbApp extends EndPoint {
+    private static final String QUEUE_NAME = "westeros_queue";
+
     public DbApp(String queue_name) {
         super(queue_name);
     }
 
     public static void main(String[] args){
-        DbApp dbApp = new DbApp("westeros_queue");
+        DbApp dbApp = new DbApp(QUEUE_NAME);
 
         dbApp.listen();
     }

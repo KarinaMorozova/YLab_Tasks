@@ -21,6 +21,8 @@ import java.util.concurrent.TimeoutException;
 
 @Component
 public class PersonApiImpl implements PersonApi {
+    private static final String FIND_BY_KEY = "select ps.* from person ps where ps.person_id = %d;";
+    private static final String FIND_ALL = "select p.* from person p";
     private static final String QUEUE_NAME = "westeros_queue";
     @Autowired
     private DataSource dataSource;
@@ -33,8 +35,7 @@ public class PersonApiImpl implements PersonApi {
         if (person != null) {
             MessageClassContainer container = new MessageClassContainer(person, MessageStatus.DELETE);
             sendMessage(container);
-        }
-        else {
+        } else {
             System.err.println("Была произведена попытка удаления не существующих данных");
         }
     }
@@ -45,8 +46,7 @@ public class PersonApiImpl implements PersonApi {
 
         if (findPerson(personId) != null) {
             messageStatus = MessageStatus.UPDATE;
-        }
-        else {
+        } else {
             messageStatus = MessageStatus.INSERT;
         }
 
@@ -56,28 +56,26 @@ public class PersonApiImpl implements PersonApi {
     }
 
     private void sendMessage(MessageClassContainer messageClassContainer) {
-        try (com.rabbitmq.client.Connection connection = this.connectionFactory.newConnection();
-             Channel channel = connection.createChannel()) {
+        try (
+            com.rabbitmq.client.Connection connection = this.connectionFactory.newConnection();
+            Channel channel = connection.createChannel()
+        ) {
+            channel.queueDeclare(QUEUE_NAME, false, false, false, null);
 
             ObjectMapper mapper = new ObjectMapper();
             String jsonInString = mapper.writeValueAsString(messageClassContainer);
 
             channel.basicPublish("", QUEUE_NAME, null, jsonInString.getBytes());
-        }
-        catch (IOException ex) {
-            System.err.format("Error: %s", ex.getMessage());
-        } catch (TimeoutException e) {
-            throw new RuntimeException(e);
+        } catch (IOException | TimeoutException tex) {
+            tex.printStackTrace();
         }
     }
 
     @Override
     public Person findPerson(Long personId) {
-        String findPersonByKey = "select ps.* from person ps where ps.person_id = %d;";
-
         try (Connection connection = this.dataSource.getConnection();
              Statement statement = connection.createStatement();
-             ResultSet rs = statement.executeQuery(String.format(findPersonByKey, personId)) ) {
+             ResultSet rs = statement.executeQuery(String.format(FIND_BY_KEY, personId)) ) {
             if (rs.next()) {
                 Person result = new Person();
                 result.setId(rs.getLong("person_id"));
@@ -98,11 +96,9 @@ public class PersonApiImpl implements PersonApi {
     public List<Person> findAll() {
         List<Person> persons = new ArrayList<>();
 
-        String selectStr = "select p.* from person p";
-
         try (Connection connection = this.dataSource.getConnection();
              Statement statement = connection.createStatement();
-             ResultSet rs = statement.executeQuery(selectStr)) {
+             ResultSet rs = statement.executeQuery(FIND_ALL)) {
 
             while (rs.next()) {
                 Long person_id = rs.getLong("person_id");

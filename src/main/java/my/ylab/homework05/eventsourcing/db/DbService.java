@@ -11,14 +11,16 @@ import java.sql.SQLException;
 
 @Component
 public class DbService {
+    private static final String REMOVE_BY_ID = "delete from person ps where ps.person_id = ?;";
+    private static final String INSERT_INFO = "insert into person (person_id, first_name, last_name, middle_name) values (?,?,?,?);";
+    private static final String UPDATE_INFO = "update person set first_name = ?, last_name = ?, middle_name = ? " +
+            "where person_id = ?;";
     @Autowired
     private DataSource dataSource;
 
     public void delete(Person person) {
-        String removeByKey = "delete from person ps where ps.person_id = ?;";
-
         try (Connection connection = this.dataSource.getConnection();
-             PreparedStatement preparedStatement = connection.prepareStatement(removeByKey)
+             PreparedStatement preparedStatement = connection.prepareStatement(REMOVE_BY_ID)
         ) {
             preparedStatement.setLong(1, person.getId());
             preparedStatement.execute();
@@ -28,10 +30,8 @@ public class DbService {
     }
 
     public void insert(Person person) {
-        String insertStr = "insert into person (person_id, first_name, last_name, middle_name) values (?,?,?,?);";
-
         try (Connection connection = this.dataSource.getConnection();
-             PreparedStatement preparedStatement = connection.prepareStatement(insertStr) ) {
+             PreparedStatement preparedStatement = connection.prepareStatement(INSERT_INFO) ) {
             preparedStatement.setLong(1, person.getId());
             preparedStatement.setString(2, person.getName());
             preparedStatement.setString(3, person.getLastName());
@@ -45,11 +45,8 @@ public class DbService {
     }
 
     public void update(Person person) {
-        String updateStr = "update person set first_name = ?, last_name = ?, middle_name = ? " +
-                "where person_id = ?;";
-
         try (Connection connection = this.dataSource.getConnection();
-             PreparedStatement preparedStatement = connection.prepareStatement(updateStr)
+             PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_INFO)
         ) {
             preparedStatement.setString(1, person.getName());
             preparedStatement.setString(2, person.getLastName());
