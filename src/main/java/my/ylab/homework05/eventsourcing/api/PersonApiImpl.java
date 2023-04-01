@@ -22,14 +22,10 @@ import java.util.concurrent.TimeoutException;
 @Component
 public class PersonApiImpl implements PersonApi {
     private static final String QUEUE_NAME = "westeros_queue";
-    private DataSource dataSource;
-    private ConnectionFactory connectionFactory;
-
     @Autowired
-    public PersonApiImpl(DataSource dataSource, ConnectionFactory connectionFactory) {
-        this.dataSource = dataSource;
-        this.connectionFactory = connectionFactory;
-    }
+    private DataSource dataSource;
+    @Autowired
+    private ConnectionFactory connectionFactory;
 
     @Override
     public void deletePerson(Long personId) {

@@ -2,20 +2,17 @@ package my.ylab.homework05.eventsourcing.db;
 
 import my.ylab.homework04.eventsourcing.Person;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-@Service
+@Component
 public class DbService {
-    private DataSource dataSource;
     @Autowired
-    public DbService(DataSource dataSource) {
-        this.dataSource = dataSource;
-    }
+    private DataSource dataSource;
 
     public void delete(Person person) {
         String removeByKey = "delete from person ps where ps.person_id = ?;";

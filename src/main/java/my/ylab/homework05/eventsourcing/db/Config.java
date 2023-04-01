@@ -1,16 +1,19 @@
 package my.ylab.homework05.eventsourcing.db;
 
-import java.sql.SQLException;
 import javax.sql.DataSource;
 
 import com.rabbitmq.client.ConnectionFactory;
 import my.ylab.homework05.DbUtil;
 import org.postgresql.ds.PGSimpleDataSource;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 
+@Configuration
+@ComponentScan("my.ylab.homework05.eventsourcing.db")
 public class Config {
     @Bean
-    public DataSource dataSource() throws SQLException {
+    public DataSource dataSource() {
         PGSimpleDataSource dataSource = new PGSimpleDataSource();
         dataSource.setServerName("localhost");
         dataSource.setUser("postgres");
@@ -20,12 +23,13 @@ public class Config {
 
         String ddl = ""
                 + "drop table if exists person;"
-                + "create if not exists table person (\n"
+                + "create table if not exists person (\n"
                 + "person_id bigint primary key,\n"
                 + "first_name varchar,\n"
                 + "last_name varchar,\n"
                 + "middle_name varchar\n"
                 + ")";
+
         DbUtil.applyDdl(ddl, dataSource);
 
         return dataSource;

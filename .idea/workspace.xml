@@ -6,9 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="b115fbeb-4b0f-460d-ae44-21af78116e64" name="Changes" comment="Init commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/DbUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/DbUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/api/ApiApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/api/ApiApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/api/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/api/Config.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/api/PersonApiImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/api/PersonApiImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/db/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/db/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/db/DbApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/db/DbApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/db/DbController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/db/DbController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/db/DbService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/db/DbService.java" afterDir="false" />
     </list>
@@ -65,7 +68,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "reference.idesettings.quicklists",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "spring.configuration.checksum": "e464a028bef6a36381449c715134cedc"
   }
 }]]></component>
@@ -199,7 +202,7 @@
       <workItem from="1680184083376" duration="1177000" />
       <workItem from="1680185361496" duration="3193000" />
       <workItem from="1680249953443" duration="8472000" />
-      <workItem from="1680336427703" duration="12829000" />
+      <workItem from="1680336427703" duration="22821000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1678091046946</created>
@@ -271,7 +274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680352343070</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Init commit">
+      <created>1680365226857</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1680365226857</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,6 +304,27 @@
     <MESSAGE value="Init commit" />
     <option name="LAST_COMMIT_MESSAGE" value="Init commit" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/db/DbController.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/db/Config.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/db/DbApp.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/YLab_Tasks$SequencesTest.ic" NAME="SequencesTest Coverage Results" MODIFIED="1678723676474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>my.ylab.homework02.sequences.*</FILTER>
@@ -309,6 +340,9 @@
     </SUITE>
     <SUITE FILE_PATH="coverage/YLab_Tasks$ComplexNumbersTest.ic" NAME="ComplexNumbersTest Coverage Results" MODIFIED="1678724900352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>my.ylab.homework02.complex.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/YLab_Tasks$ApiApp.ic" NAME="ApiApp Coverage Results" MODIFIED="1680375432034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>my.ylab.homework05.eventsourcing.api.*</FILTER>
     </SUITE>
   </component>
 </project>

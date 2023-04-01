@@ -7,27 +7,22 @@ import com.rabbitmq.client.GetResponse;
 import my.ylab.homework04.eventsourcing.message.MessageClassContainer;
 import my.ylab.homework04.eventsourcing.message.MessageStatus;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
+import org.springframework.stereotype.Component;
 
-import java.io.IOException;
-import java.util.concurrent.TimeoutException;
-
-@Controller
+@Component
 public class DbController {
     private static final String QUEUE_NAME = "westeros_queue";
     @Autowired
     private ConnectionFactory connectionFactory;
+    @Autowired
     private DbService dbService;
 
-    @Autowired
-    public DbController(DbService dbService) {
-        this.dbService = dbService;
+    public DbController() {
         listen();
     }
 
     public void listen() {
-
-        try (com.rabbitmq.client.Connection connection = this.connectionFactory.newConnection();
+        try (com.rabbitmq.client.Connection connection = connectionFactory.newConnection();
              Channel channel = connection.createChannel()) {
 
             while (!Thread.currentThread().isInterrupted()) {

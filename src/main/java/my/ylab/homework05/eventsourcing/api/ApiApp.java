@@ -1,10 +1,9 @@
 package my.ylab.homework05.eventsourcing.api;
 
-import com.rabbitmq.client.ConnectionFactory;
-import org.springframework.beans.factory.annotation.Autowired;
+import my.ylab.homework05.eventsourcing.Person;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import javax.sql.DataSource;
+import java.util.List;
 
 
 /**
@@ -18,17 +17,17 @@ import javax.sql.DataSource;
  */
 
 public class ApiApp {
-    @Autowired
-    static DataSource dataSource;
-    @Autowired
-    static ConnectionFactory connectionFactory;
     public static void main(String[] args) throws Exception {
         AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(Config.class);
         applicationContext.start();
-        PersonApi personApi = applicationContext.getBean(PersonApi.class, dataSource, connectionFactory);
-
+        PersonApi personApi = applicationContext.getBean(PersonApi.class);
 
         personApi.savePerson(1L, "Arya", "Stark", "Eddard");
+
+        List<Person> list = personApi.findAll();
+        for (Person p: list) {
+            System.out.println(p);
+        }
     }
 }
 
