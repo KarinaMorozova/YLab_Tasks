@@ -1,8 +1,10 @@
-package my.ylab.homework04.eventsourcing;
+package my.ylab.homework05.eventsourcing;
 
+import lombok.ToString;
 import org.springframework.stereotype.Component;
 
 @Component
+@ToString
 public class Person {
     private Long id;
     private String name;
@@ -46,14 +48,8 @@ public class Person {
     public String getMiddleName() {
         return middleName;
     }
+
     public void setMiddleName(String middleName) {
         this.middleName = middleName;
-    }
-
-    @Override
-    public String toString() {
-        return "Person{" + " id = " + id +
-                ", name = " + name + ", lastName = " + lastName +
-                ", middleName = " + middleName + " }";
     }
 }
