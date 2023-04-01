@@ -1,4 +1,4 @@
-package my.ylab.homework05.eventsourcing.message.api;
+package my.ylab.homework05.eventsourcing.api;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.rabbitmq.client.Channel;

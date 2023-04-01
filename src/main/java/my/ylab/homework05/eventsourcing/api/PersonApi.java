@@ -1,4 +1,4 @@
-package my.ylab.homework05.eventsourcing.message.api;
+package my.ylab.homework05.eventsourcing.api;
 
 import my.ylab.homework05.eventsourcing.Person;
 import org.springframework.stereotype.Component;

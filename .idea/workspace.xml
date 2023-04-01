@@ -4,30 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b115fbeb-4b0f-460d-ae44-21af78116e64" name="Changes" comment="Init commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/DbUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/db/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/db/DbApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/db/DbController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/db/DbService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/message/MessageClassContainer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/message/MessageStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/message/api/ApiApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/message/api/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/message/api/PersonApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/message/api/PersonApiImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/messagefilter/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/messagefilter/MessageFilterApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/sqlquerybuilder/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/sqlquerybuilder/SQLQueryBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/sqlquerybuilder/SQLQueryExtenderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework04/eventsourcing/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework04/eventsourcing/Person.java" afterDir="false" />
-    </list>
+    <list default="true" id="b115fbeb-4b0f-460d-ae44-21af78116e64" name="Changes" comment="Init commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -215,7 +192,7 @@
       <workItem from="1680184083376" duration="1177000" />
       <workItem from="1680185361496" duration="3193000" />
       <workItem from="1680249953443" duration="8472000" />
-      <workItem from="1680336427703" duration="8365000" />
+      <workItem from="1680336427703" duration="8690000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1678091046946</created>
@@ -273,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679435350441</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Init commit">
+      <created>1680352185929</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1680352185929</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
