@@ -11,8 +11,11 @@ import java.sql.SQLException;
 
 @Service
 public class DbService {
-    @Autowired
     private DataSource dataSource;
+    @Autowired
+    public DbService(DataSource dataSource) {
+        this.dataSource = dataSource;
+    }
 
     public void delete(Person person) {
         String removeByKey = "delete from person ps where ps.person_id = ?;";

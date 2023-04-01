@@ -9,7 +9,6 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class Config {
-
     @Bean
     public DataSource dataSource() {
         PGSimpleDataSource dataSource = new PGSimpleDataSource();

@@ -1,6 +1,10 @@
 package my.ylab.homework05.eventsourcing.api;
 
+import com.rabbitmq.client.ConnectionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import javax.sql.DataSource;
 
 
 /**
@@ -14,12 +18,17 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  */
 
 public class ApiApp {
+    @Autowired
+    static DataSource dataSource;
+    @Autowired
+    static ConnectionFactory connectionFactory;
     public static void main(String[] args) throws Exception {
-        // Тут пишем создание PersonApi, запуск и демонстрацию работы
         AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(Config.class);
         applicationContext.start();
-        PersonApi personApi = applicationContext.getBean(PersonApi.class);
-        // пишем взаимодействие с PersonApi
+        PersonApi personApi = applicationContext.getBean(PersonApi.class, dataSource, connectionFactory);
+
+
+        personApi.savePerson(1L, "Arya", "Stark", "Eddard");
     }
 }
 

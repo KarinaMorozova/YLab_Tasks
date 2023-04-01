@@ -22,37 +22,36 @@ public class DbController {
     @Autowired
     public DbController(DbService dbService) {
         this.dbService = dbService;
+        listen();
     }
 
     public void listen() {
-        try {
-            Channel channel = connectionFactory.newConnection().createChannel();
-            try {
-                while (!Thread.currentThread().isInterrupted()) {
-                    GetResponse message = channel.basicGet(QUEUE_NAME, true);
-                    if (message == null) {
-                        // no messages
+
+        try (com.rabbitmq.client.Connection connection = this.connectionFactory.newConnection();
+             Channel channel = connection.createChannel()) {
+
+            while (!Thread.currentThread().isInterrupted()) {
+                GetResponse message = channel.basicGet(QUEUE_NAME, true);
+                if (message == null) {
+                    // no messages
+                } else {
+                    String received = new String(message.getBody());
+                    System.out.println(received);
+
+                    ObjectMapper objectMapper = new ObjectMapper();
+                    MessageClassContainer container = objectMapper.readValue(received, MessageClassContainer.class);
+
+                    if (container.getMessageStatus() == MessageStatus.DELETE) {
+                        dbService.delete(container.getPerson());
+                    } else if (container.getMessageStatus() == MessageStatus.INSERT) {
+                        dbService.insert(container.getPerson());
                     } else {
-                        String received = new String(message.getBody());
-                        System.out.println(received);
-
-                        ObjectMapper objectMapper = new ObjectMapper();
-                        MessageClassContainer container = objectMapper.readValue(received, MessageClassContainer.class);
-
-                        if (container.getMessageStatus() == MessageStatus.DELETE) {
-                            dbService.delete(container.getPerson());
-                        } else if (container.getMessageStatus() == MessageStatus.INSERT) {
-                            dbService.insert(container.getPerson());
-                        } else {
-                            dbService.update(container.getPerson());
-                        }
+                        dbService.update(container.getPerson());
                     }
                 }
-            } catch (Exception ex) {
-                ex.printStackTrace();
             }
-        } catch (IOException | TimeoutException etx) {
-            etx.printStackTrace();
+        } catch (Exception ex) {
+            ex.printStackTrace();
         }
     }
 }
