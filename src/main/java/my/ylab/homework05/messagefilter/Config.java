@@ -11,7 +11,6 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @ComponentScan("my.ylab.homework05.messagefilter")
 public class Config {
-
     @Bean
     public ConnectionFactory connectionFactory() {
         ConnectionFactory connectionFactory = new ConnectionFactory();

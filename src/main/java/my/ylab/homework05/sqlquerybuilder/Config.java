@@ -10,7 +10,6 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @ComponentScan("my.ylab.homework05.sqlquerybuilder")
 public class Config {
-
     @Bean
     public DataSource dataSource() {
         PGSimpleDataSource dataSource = new PGSimpleDataSource();
