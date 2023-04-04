@@ -5,7 +5,6 @@ import my.ylab.homework05.eventsourcing.Person;
 public class MessageClassContainer {
     private Person person;
     private MessageStatus messageStatus;
-
     public MessageClassContainer(){}
 
     public MessageClassContainer(Person person, MessageStatus messageStatus) {

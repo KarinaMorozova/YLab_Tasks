@@ -16,19 +16,20 @@ import java.util.concurrent.TimeoutException;
 @Component
 public class DbController {
     private static final String QUEUE_NAME = "westeros_queue";
-    @Autowired
     private ConnectionFactory connectionFactory;
-    @Autowired
     private DbService dbService;
+
+    public DbController(@Autowired ConnectionFactory connectionFactory, @Autowired DbService dbService) {
+        this.connectionFactory = connectionFactory;
+        this.dbService = dbService;
+    }
 
     public void listen() {
         try (Connection connection = connectionFactory.newConnection();
              Channel channel = connection.createChannel() ) {
                 while (!Thread.currentThread().isInterrupted()) {
                     GetResponse message = channel.basicGet(QUEUE_NAME, true);
-                    if (message == null) {
-                        // no messages
-                    } else {
+                    if (message != null) {
                         String received = new String(message.getBody());
                         System.out.println(received);
 

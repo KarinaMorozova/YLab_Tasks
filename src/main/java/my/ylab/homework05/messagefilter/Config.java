@@ -11,6 +11,9 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @ComponentScan("my.ylab.homework05.messagefilter")
 public class Config {
+    static final String outputName = "output";
+    static final String inputName = "input";
+
     @Bean
     public ConnectionFactory connectionFactory() {
         ConnectionFactory connectionFactory = new ConnectionFactory();
@@ -30,6 +33,18 @@ public class Config {
         dataSource.setPassword("postgres");
         dataSource.setDatabaseName("postgres");
         dataSource.setPortNumber(5432);
+
         return dataSource;
     }
+
+    @Bean
+    public String inputQueue() {
+        return inputName;
+    }
+
+    @Bean
+    public String outputQueue() {
+        return outputName;
+    }
+
 }

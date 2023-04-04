@@ -9,7 +9,6 @@ public enum MessageStatus {
     MessageStatus(String title) {
         this.title = title;
     }
-
     public String getTitle() {
         return title;
     }

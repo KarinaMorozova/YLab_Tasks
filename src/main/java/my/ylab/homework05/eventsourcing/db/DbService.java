@@ -15,8 +15,10 @@ public class DbService {
     private static final String INSERT_INFO = "insert into person (person_id, first_name, last_name, middle_name) values (?,?,?,?);";
     private static final String UPDATE_INFO = "update person set first_name = ?, last_name = ?, middle_name = ? " +
             "where person_id = ?;";
-    @Autowired
     private DataSource dataSource;
+    public DbService(@Autowired DataSource dataSource) {
+        this.dataSource = dataSource;
+    }
 
     public void delete(Person person) {
         try (Connection connection = this.dataSource.getConnection();

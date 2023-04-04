@@ -18,15 +18,18 @@ public class SQLQueryBuilderImpl implements  SQLQueryBuilder {
     private static final String TABLE_LIST = "SELECT table_name FROM information_schema.tables\n" +
             "WHERE table_schema NOT IN ('information_schema','pg_catalog');";
 
-    @Autowired
     private DataSource dataSource;
+
+    public SQLQueryBuilderImpl(@Autowired DataSource dataSource) {
+        this.dataSource = dataSource;
+    }
 
     @Override
     public String queryForTable(String tableName) {
-        String result = "null";
+        String result = null;
         StringBuilder sb = new StringBuilder();
 
-        try (Connection connection = dataSource.getConnection();
+        try (Connection connection = this.dataSource.getConnection();
              Statement statement = connection.createStatement();
              ResultSet rs = statement.executeQuery(String.format(EXIST_TBL, tableName))) {
 

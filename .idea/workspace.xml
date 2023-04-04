@@ -5,12 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b115fbeb-4b0f-460d-ae44-21af78116e64" name="Changes" comment="Init commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/sqlquerybuilder/SQLQueryBuilderImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/messagefilter/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/messagefilter/Processor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/messagefilter/Receiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/messagefilter/Scheduler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/messagefilter/Sender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/messagefilter/resources/1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/messagefilter/resources/Transfer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/api/PersonApiImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/api/PersonApiImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/db/DbController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/db/DbController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/db/DbService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/db/DbService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/message/MessageClassContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/message/MessageClassContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/message/MessageStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/message/MessageStatus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/messagefilter/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/messagefilter/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/sqlquerybuilder/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/sqlquerybuilder/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/sqlquerybuilder/SQLQueryBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/sqlquerybuilder/SQLQueryBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/sqlquerybuilder/SQLQueryExtenderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/sqlquerybuilder/SQLQueryExtenderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/messagefilter/MessageFilterApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/messagefilter/MessageFilterApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/sqlquerybuilder/SQLQueryBuilderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/sqlquerybuilder/SQLQueryBuilderImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +32,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -50,25 +61,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "C:/IDEA_project/YLab_Tasks/src/main/java/my/ylab/homework05/eventsourcing",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "e464a028bef6a36381449c715134cedc"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/IDEA_project/YLab_Tasks/src/main/java/my/ylab/homework05/eventsourcing&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;e464a028bef6a36381449c715134cedc&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\IDEA_project\YLab_Tasks\src\main\java\my\ylab\homework05\eventsourcing" />
@@ -114,6 +125,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MessageFilterApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="my.ylab.homework05.messagefilter.MessageFilterApp" />
+      <module name="YLab_Tasks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="my.ylab.homework05.messagefilter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SQLQueryExtenderTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="my.ylab.homework05.sqlquerybuilder.SQLQueryExtenderTest" />
       <module name="YLab_Tasks" />
@@ -140,33 +164,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="my.ylab.homework04.eventsourcing.db.DbApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="my.ylab.homework04.eventsourcing.db.DbApp" />
-      <module name="YLab_Tasks" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="my.ylab.homework04.eventsourcing.db.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
+      <item itemvalue="Application.MessageFilterApp" />
       <item itemvalue="Application.DbApp" />
       <item itemvalue="Application.SQLQueryExtenderTest" />
       <item itemvalue="Application.my.ylab.homework04.eventsourcing.api.ApiApp" />
-      <item itemvalue="Application.my.ylab.homework04.eventsourcing.db.DbApp" />
       <item itemvalue="Application.ApiApp" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.SQLQueryExtenderTest" />
+        <item itemvalue="Application.MessageFilterApp" />
         <item itemvalue="Application.ApiApp" />
         <item itemvalue="Application.DbApp" />
         <item itemvalue="Application.my.ylab.homework04.eventsourcing.api.ApiApp" />
-        <item itemvalue="Application.my.ylab.homework04.eventsourcing.db.DbApp" />
       </list>
     </recent_temporary>
   </component>
@@ -199,7 +210,12 @@
       <workItem from="1680184083376" duration="1177000" />
       <workItem from="1680185361496" duration="3193000" />
       <workItem from="1680249953443" duration="8472000" />
-      <workItem from="1680336427703" duration="38604000" />
+      <workItem from="1680336427703" duration="38855000" />
+      <workItem from="1680423959418" duration="16470000" />
+      <workItem from="1680510405901" duration="20590000" />
+      <workItem from="1680599550198" duration="3717000" />
+      <workItem from="1680616775983" duration="8000" />
+      <workItem from="1680616863655" duration="5539000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1678091046946</created>
@@ -299,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680390534288</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Init commit">
+      <created>1680395099747</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1680395099747</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

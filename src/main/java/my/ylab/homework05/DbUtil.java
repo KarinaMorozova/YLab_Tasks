@@ -8,7 +8,6 @@ import javax.sql.DataSource;
 import org.postgresql.ds.PGSimpleDataSource;
 
 public class DbUtil {
-
     public static void applyDdl(String ddl, DataSource dataSource) {
         try (Connection connection = dataSource.getConnection();
              Statement statement = connection.createStatement()) {

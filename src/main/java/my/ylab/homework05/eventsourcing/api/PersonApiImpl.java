@@ -24,10 +24,14 @@ public class PersonApiImpl implements PersonApi {
     private static final String FIND_BY_KEY = "select ps.* from person ps where ps.person_id = %d;";
     private static final String FIND_ALL = "select p.* from person p";
     private static final String QUEUE_NAME = "westeros_queue";
-    @Autowired
     private DataSource dataSource;
-    @Autowired
     private ConnectionFactory connectionFactory;
+
+    public PersonApiImpl(@Autowired ConnectionFactory connectionFactory, @Autowired DataSource dataSource) {
+        this.connectionFactory = connectionFactory;
+        this.dataSource = dataSource;
+
+    }
 
     @Override
     public void deletePerson(Long personId) {
