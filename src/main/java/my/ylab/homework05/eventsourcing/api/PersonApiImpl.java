@@ -23,14 +23,20 @@ import java.util.concurrent.TimeoutException;
 public class PersonApiImpl implements PersonApi {
     private static final String FIND_BY_KEY = "select ps.* from person ps where ps.person_id = %d;";
     private static final String FIND_ALL = "select p.* from person p";
-    private static final String QUEUE_NAME = "westeros_queue";
-    private DataSource dataSource;
-    private ConnectionFactory connectionFactory;
+    ConnectionFactory connectionFactory;
+    DataSource dataSource;
+    String queueName;
+    String exchangeName;
+    String routingKey;
 
-    public PersonApiImpl(@Autowired ConnectionFactory connectionFactory, @Autowired DataSource dataSource) {
+
+    public PersonApiImpl(@Autowired ConnectionFactory connectionFactory, @Autowired DataSource dataSource,
+                         @Autowired String exchangeName, @Autowired String queueName, @Autowired String routingKey) {
         this.connectionFactory = connectionFactory;
         this.dataSource = dataSource;
-
+        this.queueName = queueName;
+        this.exchangeName = exchangeName;
+        this.routingKey = routingKey;
     }
 
     @Override
@@ -64,12 +70,13 @@ public class PersonApiImpl implements PersonApi {
             com.rabbitmq.client.Connection connection = this.connectionFactory.newConnection();
             Channel channel = connection.createChannel()
         ) {
-            channel.queueDeclare(QUEUE_NAME, false, false, false, null);
+            //channel.queueDeclare(queueName, false, false, false, null);
+//            channel.queueBind(queueName, exchangeName, routingKey, null);
 
             ObjectMapper mapper = new ObjectMapper();
             String jsonInString = mapper.writeValueAsString(messageClassContainer);
 
-            channel.basicPublish("", QUEUE_NAME, null, jsonInString.getBytes());
+            channel.basicPublish("", queueName, null, jsonInString.getBytes());
         } catch (IOException | TimeoutException tex) {
             tex.printStackTrace();
         }

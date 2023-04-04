@@ -1,10 +1,7 @@
 package my.ylab.homework05.eventsourcing.db;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.rabbitmq.client.Channel;
-import com.rabbitmq.client.Connection;
-import com.rabbitmq.client.ConnectionFactory;
-import com.rabbitmq.client.GetResponse;
+import com.rabbitmq.client.*;
 import my.ylab.homework04.eventsourcing.message.MessageClassContainer;
 import my.ylab.homework04.eventsourcing.message.MessageStatus;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,20 +12,30 @@ import java.util.concurrent.TimeoutException;
 
 @Component
 public class DbController {
-    private static final String QUEUE_NAME = "westeros_queue";
-    private ConnectionFactory connectionFactory;
-    private DbService dbService;
+    ConnectionFactory connectionFactory;
+    DbService dbService;
+    String exchangeName;
+    String queueName;
+    String routingKey;
 
-    public DbController(@Autowired ConnectionFactory connectionFactory, @Autowired DbService dbService) {
+    public DbController(@Autowired ConnectionFactory connectionFactory, @Autowired DbService dbService,
+                        @Autowired String exchangeName, @Autowired String queueName, @Autowired String routingKey) {
         this.connectionFactory = connectionFactory;
         this.dbService = dbService;
+        this.queueName = queueName;
+        this.exchangeName = exchangeName;
+        this.routingKey = routingKey;
     }
 
     public void listen() {
         try (Connection connection = connectionFactory.newConnection();
              Channel channel = connection.createChannel() ) {
+                channel.exchangeDeclare(exchangeName, BuiltinExchangeType.DIRECT);
+                channel.queueDeclare(queueName, true, false, false, null);
+                channel.queueBind(queueName, exchangeName, routingKey, null);
+
                 while (!Thread.currentThread().isInterrupted()) {
-                    GetResponse message = channel.basicGet(QUEUE_NAME, true);
+                    GetResponse message = channel.basicGet(queueName, true);
                     if (message != null) {
                         String received = new String(message.getBody());
                         System.out.println(received);

@@ -4,19 +4,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import javax.sql.DataSource;
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
 @Component
 public class SQLQueryBuilderImpl implements  SQLQueryBuilder {
-    private static final String EXIST_TBL = "SELECT * FROM pg_tables WHERE tablename = '%s';";
-    private static final String SELECT_TBL = "SELECT * FROM %s;";
-    private static final String TABLE_LIST = "SELECT table_name FROM information_schema.tables\n" +
-            "WHERE table_schema NOT IN ('information_schema','pg_catalog');";
+    private static final String SELECT_TBL = "select * from %s;";
+    private static final String TABLE_LIST = "select table_name from information_schema.tables\n" +
+            "where table_schema not in ('information_schema','pg_catalog');";
+    private static final String SELECT = "select";
+    private static final String FROM = "from";
 
     private DataSource dataSource;
 
@@ -30,12 +28,12 @@ public class SQLQueryBuilderImpl implements  SQLQueryBuilder {
         StringBuilder sb = new StringBuilder();
 
         try (Connection connection = this.dataSource.getConnection();
-             Statement statement = connection.createStatement();
-             ResultSet rs = statement.executeQuery(String.format(EXIST_TBL, tableName))) {
+             ResultSet rs = connection.getMetaData().getTables(null, null, tableName, null);
+             Statement statement = connection.createStatement() ) {
 
             if (rs.next()) {
+                sb.append(SELECT).append(" ");
                 ResultSet resultSet = statement.executeQuery(String.format(SELECT_TBL, tableName));
-                sb.append("SELECT ");
 
                 int columnCount = resultSet.getMetaData().getColumnCount();
                 for (int i = 1; i <= columnCount; i++) {
@@ -43,7 +41,7 @@ public class SQLQueryBuilderImpl implements  SQLQueryBuilder {
                     sb.append(columnName).append(", ");
                 }
                 sb.delete(sb.length() - 2, sb.length());
-                sb.append(" FROM ").append(tableName);
+                sb.append(" ").append(FROM).append(" ").append(tableName);
 
                 result = sb.toString();
             }
