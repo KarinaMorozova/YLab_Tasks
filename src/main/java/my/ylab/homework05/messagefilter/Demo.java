@@ -9,6 +9,16 @@ import org.springframework.stereotype.Component;
 import java.io.IOException;
 import java.util.concurrent.TimeoutException;
 
+
+/**
+ * Demo
+ *
+ * <p>
+ * Модуль с демонстрационными данными, помещенными в очередь input
+ *
+ * @author KarinaMorozova
+ * 02.04.2023
+ */
 @Component
 public class Demo {
     private static final String[] DEMO_DATA_ARRAY = {"Fuck you, уважаемый!", "Ах, ты, сучка крашена!",

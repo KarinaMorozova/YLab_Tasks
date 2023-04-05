@@ -3,6 +3,11 @@ package my.ylab.homework05.eventsourcing;
 import lombok.ToString;
 import org.springframework.stereotype.Component;
 
+/**
+ * Сущность "Пользователь"
+ * <p>
+ * Включает в себя данные о имени, фамилии и отчестве.
+ */
 @Component
 @ToString
 public class Person {

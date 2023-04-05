@@ -8,6 +8,14 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * SQLQueryBuilderImpl
+ * <p>
+ * Реализация интерфейса извлечения данных о таблицах {@link SQLQueryBuilder}
+ *
+ * @author Karina Morozova
+ * 01.04.2023
+ */
 @Component
 public class SQLQueryBuilderImpl implements  SQLQueryBuilder {
     private static final String SELECT_TBL = "select * from %s;";

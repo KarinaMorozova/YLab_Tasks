@@ -11,6 +11,15 @@ import org.springframework.stereotype.Component;
 import java.io.IOException;
 import java.util.concurrent.TimeoutException;
 
+/**
+ * Receiver
+ *
+ * <p>
+ * Модуль, осуществляющий получение сообщений из брокера
+ *
+ * @author KarinaMorozova
+ * 02.04.2023
+ */
 @Component
 public class Receiver {
     ConnectionFactory connectionFactory;

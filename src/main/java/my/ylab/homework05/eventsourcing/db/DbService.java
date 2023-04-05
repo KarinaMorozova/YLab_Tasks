@@ -9,6 +9,14 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
+/**
+ * DbService
+ * <p>
+ * Сервис работы с базой данных путем обработки сообщений брокера
+ *
+ * @author Karina Morozova
+ * 01.04.2023
+ */
 @Component
 public class DbService {
     private static final String REMOVE_BY_ID = "delete from person ps where ps.person_id = ?;";

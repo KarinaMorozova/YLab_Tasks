@@ -19,6 +19,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeoutException;
 
+/**
+ * PersonApiImpl
+ * <p>
+ * Реализация интерфейса управления пользователями {@link PersonApi}
+ *
+ * @author Karina Morozova
+ * 31.03.2023
+ */
 @Component
 public class PersonApiImpl implements PersonApi {
     private static final String FIND_BY_KEY = "select ps.* from person ps where ps.person_id = %d;";

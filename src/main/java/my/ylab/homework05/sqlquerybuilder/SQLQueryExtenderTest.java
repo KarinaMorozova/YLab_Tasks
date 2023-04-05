@@ -5,6 +5,16 @@ import java.util.List;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+/**
+ * SQLQueryExtenderTest
+ *
+ * <p>
+ * Приложение, собирающее информацию о таблицах базы данных
+ * и выводящее селективные запросы из таблиц со списком всех полей
+ *
+ * @author KarinaMorozova
+ * 01.04.2023
+ */
 public class SQLQueryExtenderTest {
     public static void main(String[] args) throws SQLException {
         AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(Config.class);

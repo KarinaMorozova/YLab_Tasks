@@ -10,6 +10,15 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * Transfer
+ *
+ * <p>
+ * Модуль переноса фильтрационных слов из файла в БД
+ *
+ * @author KarinaMorozova
+ * 02.04.2023
+ */
 @Component
 public class Transfer {
     private static final String ACTUAL_TABLE_NAME = "words";

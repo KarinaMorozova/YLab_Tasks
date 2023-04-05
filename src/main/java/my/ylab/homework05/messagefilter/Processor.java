@@ -7,6 +7,17 @@ import org.springframework.stereotype.Component;
 import javax.sql.DataSource;
 import java.sql.*;
 
+/**
+ * Processor
+ *
+ * <p>
+ * Модуль основного процесса: выбор сообщения из очереди input,
+ * фильтрация нецензурных слов через сравнение их с таблицей слов в БД,
+ * запись отфильтрованного сообщения в очередь output
+ *
+ * @author KarinaMorozova
+ * 02.04.2023
+ */
 @Component
 public class Processor {
     public static final String SELECT_SQL = "select name from words where name = ?;";
@@ -14,7 +25,6 @@ public class Processor {
     Receiver receiver;
     ConnectionFactory connectionFactory;
     DataSource dataSource;
-
 
     public Processor (@Autowired Sender sender, @Autowired Receiver receiver,
                       @Autowired ConnectionFactory connectionFactory, @Autowired DataSource dataSource) {

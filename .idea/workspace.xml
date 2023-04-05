@@ -6,11 +6,22 @@
   <component name="ChangeListManager">
     <list default="true" id="b115fbeb-4b0f-460d-ae44-21af78116e64" name="Changes" comment="Init commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/api/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/api/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/api/ApiApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/api/ApiApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/api/PersonApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/api/PersonApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/api/PersonApiImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/api/PersonApiImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/db/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/db/Config.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/db/DbController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/db/DbController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/db/DbService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/eventsourcing/db/DbService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/messagefilter/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/messagefilter/Demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/messagefilter/MessageFilterApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/messagefilter/MessageFilterApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/messagefilter/Processor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/messagefilter/Processor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/messagefilter/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/messagefilter/Receiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/messagefilter/Scheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/messagefilter/Scheduler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/messagefilter/Sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/messagefilter/Sender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/messagefilter/resources/Transfer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/messagefilter/resources/Transfer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/sqlquerybuilder/SQLQueryBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/sqlquerybuilder/SQLQueryBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/sqlquerybuilder/SQLQueryBuilderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/sqlquerybuilder/SQLQueryBuilderImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/sqlquerybuilder/SQLQueryExtenderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/ylab/homework05/sqlquerybuilder/SQLQueryExtenderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +215,8 @@
       <workItem from="1680510405901" duration="20590000" />
       <workItem from="1680599550198" duration="3717000" />
       <workItem from="1680616775983" duration="8000" />
-      <workItem from="1680616863655" duration="15861000" />
+      <workItem from="1680616863655" duration="16102000" />
+      <workItem from="1680679084181" duration="4128000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1678091046946</created>
@@ -318,7 +330,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680636670000</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Init commit">
+      <created>1680651859564</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1680651859564</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

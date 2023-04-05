@@ -10,6 +10,15 @@ import org.springframework.stereotype.Component;
 import java.io.IOException;
 import java.util.concurrent.TimeoutException;
 
+/**
+ * DbController
+ * <p>
+ * Контроллер, прослушивающий сообщения брокера и
+ * отсылающий команды на изменение в БД
+ *
+ * @author Karina Morozova
+ * 01.04.2023
+ */
 @Component
 public class DbController {
     ConnectionFactory connectionFactory;
