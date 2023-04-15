@@ -1,6 +1,5 @@
-package io.ylab.intensive.homework01;
+package io.ylab.intensive.lesson01;
 
-import io.ylab.intensive.lesson01.Pell;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

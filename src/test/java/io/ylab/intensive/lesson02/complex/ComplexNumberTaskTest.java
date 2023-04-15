@@ -1,6 +1,5 @@
-package io.ylab.intensive.homework02.complex;
+package io.ylab.intensive.lesson02.complex;
 
-import io.ylab.intensive.lesson02.complex.ComplexNumber;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 

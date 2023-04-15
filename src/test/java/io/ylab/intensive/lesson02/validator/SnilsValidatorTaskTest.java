@@ -1,7 +1,6 @@
-package io.ylab.intensive.homework02.validator;
+package io.ylab.intensive.lesson02.validator;
 
 
-import io.ylab.intensive.lesson02.validator.SnilsValidatorImpl;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;

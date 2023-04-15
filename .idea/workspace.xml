@@ -95,59 +95,7 @@
       <recent name="my.ylab.homework05.eventsourcing.api" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SQLQueryExtenderTest">
-    <configuration name="ApiApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.ylab.intensive.lesson05.eventsourcing.api.ApiApp" />
-      <module name="YLab_Tasks" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.ylab.intensive.lesson05.eventsourcing.api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DbApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.ylab.intensive.lesson05.eventsourcing.db.DbApp" />
-      <module name="YLab_Tasks" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.ylab.intensive.lesson05.eventsourcing.db.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FileSorterTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.ylab.intensive.lesson04.filesort.FileSorterTest" />
-      <module name="YLab_Tasks" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.ylab.intensive.lesson04.filesort.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MessageFilterApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.ylab.intensive.lesson05.messagefilter.MessageFilterApp" />
-      <module name="YLab_Tasks" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.ylab.intensive.lesson05.messagefilter.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.TransliteratorTaskTest">
     <configuration name="SQLQueryExtenderTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.ylab.intensive.lesson05.sqlquerybuilder.SQLQueryExtenderTest" />
       <module name="YLab_Tasks" />
@@ -161,13 +109,80 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ComplexNumberTaskTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="YLab_Tasks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.ylab.intensive.lesson02.complex.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.ylab.intensive.lesson02.complex" />
+      <option name="MAIN_CLASS_NAME" value="io.ylab.intensive.lesson02.complex.ComplexNumberTaskTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PellTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="YLab_Tasks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.ylab.intensive.lesson01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.ylab.intensive.lesson01" />
+      <option name="MAIN_CLASS_NAME" value="io.ylab.intensive.lesson01.PellTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SnilsValidatorTaskTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="YLab_Tasks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.ylab.intensive.lesson02.validator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.ylab.intensive.lesson02.validator" />
+      <option name="MAIN_CLASS_NAME" value="io.ylab.intensive.lesson02.validator.SnilsValidatorTaskTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransliteratorTaskTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="YLab_Tasks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.ylab.intensive.lesson03.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.ylab.intensive.lesson03" />
+      <option name="MAIN_CLASS_NAME" value="io.ylab.intensive.lesson03.TransliteratorTaskTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.SQLQueryExtenderTest" />
+      <item itemvalue="JUnit.ComplexNumberTaskTest" />
+      <item itemvalue="JUnit.PellTest" />
+      <item itemvalue="JUnit.SnilsValidatorTaskTest" />
+      <item itemvalue="JUnit.TransliteratorTaskTest" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TransliteratorTaskTest" />
+        <item itemvalue="JUnit.SnilsValidatorTaskTest" />
+        <item itemvalue="JUnit.ComplexNumberTaskTest" />
+        <item itemvalue="JUnit.PellTest" />
         <item itemvalue="Application.SQLQueryExtenderTest" />
-        <item itemvalue="Application.MessageFilterApp" />
-        <item itemvalue="Application.ApiApp" />
-        <item itemvalue="Application.DbApp" />
-        <item itemvalue="Application.FileSorterTest" />
       </list>
     </recent_temporary>
   </component>

@@ -1,4 +1,4 @@
-package io.ylab.intensive.homework03;
+package io.ylab.intensive.lesson03;
 
 import io.ylab.intensive.lesson03.transliterator.Transliterator;
 import io.ylab.intensive.lesson03.transliterator.TransliteratorImpl;
