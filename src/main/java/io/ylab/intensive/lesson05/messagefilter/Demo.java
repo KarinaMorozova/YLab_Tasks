@@ -24,12 +24,14 @@ public class Demo {
     private static final String[] DEMO_DATA_ARRAY = {"Fuck you, уважаемый!", "Ах, ты, сучка крашена!",
             "Жопа есть, а слова нет", "fuck fuck! fuck? fucker; fucking, fuck\n fucking\n !fucker! Fucking fucK",
             "По хую мне"};
-    ConnectionFactory connectionFactory;
-    String inputQueue;
 
-    public Demo(@Autowired ConnectionFactory connectionFactory, @Autowired String inputQueue) {
+    static final String inputQueue = "input";
+
+    private ConnectionFactory connectionFactory;
+
+    @Autowired
+    public Demo(ConnectionFactory connectionFactory) {
         this.connectionFactory = connectionFactory;
-        this.inputQueue = inputQueue;
     }
 
     public void demonstrate() {

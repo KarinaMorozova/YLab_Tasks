@@ -21,16 +21,14 @@ import java.sql.*;
 @Component
 public class Processor {
     public static final String SELECT_SQL = "select name from words where name = ?;";
-    Sender sender;
-    Receiver receiver;
-    ConnectionFactory connectionFactory;
-    DataSource dataSource;
+    private Sender sender;
+    private Receiver receiver;
+    private DataSource dataSource;
 
-    public Processor (@Autowired Sender sender, @Autowired Receiver receiver,
-                      @Autowired ConnectionFactory connectionFactory, @Autowired DataSource dataSource) {
+    @Autowired
+    public Processor (Sender sender, Receiver receiver, DataSource dataSource) {
         this.sender = sender;
         this.receiver = receiver;
-        this.connectionFactory = connectionFactory;
         this.dataSource = dataSource;
     }
 

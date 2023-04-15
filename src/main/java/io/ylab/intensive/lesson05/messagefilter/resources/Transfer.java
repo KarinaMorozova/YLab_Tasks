@@ -26,7 +26,7 @@ public class Transfer {
     private static final String REMOVE_DATA_SQL = "delete from words;";
     private static final String INSERT_SQL = "insert into words (name) values (?);";
     private static final int BATCH_SIZE = 10000;
-    DataSource dataSource;
+    private DataSource dataSource;
 
     public Transfer(@Autowired DataSource dataSource) {
         this.dataSource = dataSource;
@@ -47,26 +47,12 @@ public class Transfer {
 
     public boolean convert(String input, String output) {
         boolean result = false;
-        List<String> list = new ArrayList<>();
 
-        try (FileReader fileReader = new FileReader(input);
-             BufferedReader reader = new BufferedReader(fileReader)) {
-
-            String wordLine;
-            String[] words;
-            while ((wordLine = reader.readLine()) != null) {
-                words = wordLine.split(",");
-
-                for (String w: words) {
-                    if (w.length() == w.replaceAll(" .,:;?!\n", "").length()) {
-                        list.add(w.trim());
-                    }
-                }
-            }
-
+        try {
             File outputFile = new File(output);
             if (outputFile.createNewFile()) {
                 try (PrintWriter pw = new PrintWriter(output)) {
+                    List<String> list = wordsToList(input);
                     for (String s : list) {
                         pw.println(s);
                     }
@@ -85,6 +71,31 @@ public class Transfer {
         return result;
     }
 
+    private List<String> wordsToList(String input) {
+        List<String> list = new ArrayList<>();
+
+        try (FileReader fileReader = new FileReader(input);
+             BufferedReader reader = new BufferedReader(fileReader)) {
+
+            String wordLine;
+            String[] words;
+            while ((wordLine = reader.readLine()) != null) {
+                words = wordLine.split(",");
+
+                for (String w: words) {
+                    if (w.length() == w.replaceAll(" .,:;?!\n", "").length()) {
+                        list.add(w.trim());
+                    }
+                }
+            }
+        }
+        catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+        return list;
+    }
+
     private void sendToDB(String output) {
         prepareTable();
         List<String> words = readFromFile(output);
@@ -94,9 +105,13 @@ public class Transfer {
     private void prepareTable() {
         boolean isExist;
 
+        Connection connection = null;
+        ResultSet rs = null;
+        Statement stmt = null;
+
         try {
-            Connection connection = this.dataSource.getConnection();
-            ResultSet rs = connection.getMetaData().getTables(null, null, ACTUAL_TABLE_NAME, null);
+            connection = this.dataSource.getConnection();
+            rs = connection.getMetaData().getTables(null, null, ACTUAL_TABLE_NAME, null);
             isExist = rs.next();
 
             if (!isExist) {
@@ -106,7 +121,7 @@ public class Transfer {
                 statement.close();
             }
 
-            Statement stmt = connection.createStatement();
+            stmt = connection.createStatement();
             stmt.execute(REMOVE_DATA_SQL);
 
             stmt.close();
@@ -115,6 +130,16 @@ public class Transfer {
         }
         catch (SQLException e) {
             System.err.format("SQL State: %s\n%s", e.getSQLState(), e.getMessage());
+        }
+        finally {
+            try {
+                stmt.close();
+                rs.close();
+                connection.close();
+            }
+            catch (SQLException e) {
+                System.err.format("SQL State: %s\n%s", e.getSQLState(), e.getMessage());
+            }
         }
      }
 

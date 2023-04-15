@@ -11,9 +11,6 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @ComponentScan("io.ylab.intensive.lesson05.eventsourcing.api")
 public class Config {
-    static final String queueName = "westeros-queue";
-    static final String exchangeName = "exc";
-    static final String routingKey = "key";
     @Bean
     public DataSource dataSource() {
         PGSimpleDataSource dataSource = new PGSimpleDataSource();
@@ -36,17 +33,4 @@ public class Config {
         return connectionFactory;
     }
 
-    @Bean
-    public String exchangeName() {
-        return exchangeName;
-    }
-
-    @Bean
-    public String queueName() {
-        return queueName;
-    }
-    @Bean
-    public String routingKey() {
-        return routingKey;
-    }
 }

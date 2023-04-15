@@ -21,12 +21,13 @@ import java.util.concurrent.TimeoutException;
  */
 @Component
 public class Sender {
-    ConnectionFactory connectionFactory;
-    String outputQueue;
+    private ConnectionFactory connectionFactory;
 
-    public Sender(@Autowired ConnectionFactory connectionFactory, @Autowired String outputQueue) {
+    static final String outputQueue = "output";
+
+    @Autowired
+    public Sender(ConnectionFactory connectionFactory) {
         this.connectionFactory = connectionFactory;
-        this.outputQueue = outputQueue;
     }
 
     public void send(final String toSend) {

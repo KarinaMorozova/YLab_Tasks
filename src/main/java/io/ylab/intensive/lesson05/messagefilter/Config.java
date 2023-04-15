@@ -11,9 +11,6 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @ComponentScan("io.ylab.intensive.lesson05.messagefilter")
 public class Config {
-    static final String outputName = "output";
-    static final String inputName = "input";
-
     @Bean
     public ConnectionFactory connectionFactory() {
         ConnectionFactory connectionFactory = new ConnectionFactory();
@@ -36,15 +33,4 @@ public class Config {
 
         return dataSource;
     }
-
-    @Bean
-    public String inputQueue() {
-        return inputName;
-    }
-
-    @Bean
-    public String outputQueue() {
-        return outputName;
-    }
-
 }

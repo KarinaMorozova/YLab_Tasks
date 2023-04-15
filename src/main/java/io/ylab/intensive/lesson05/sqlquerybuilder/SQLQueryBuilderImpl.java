@@ -23,10 +23,10 @@ public class SQLQueryBuilderImpl implements  SQLQueryBuilder {
             "where table_schema not in ('information_schema','pg_catalog');";
     private static final String SELECT = "select";
     private static final String FROM = "from";
-
     private DataSource dataSource;
 
-    public SQLQueryBuilderImpl(@Autowired DataSource dataSource) {
+    @Autowired
+    public SQLQueryBuilderImpl(DataSource dataSource) {
         this.dataSource = dataSource;
     }
 

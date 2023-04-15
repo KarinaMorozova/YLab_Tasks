@@ -24,7 +24,8 @@ public class DbService {
     private static final String UPDATE_INFO = "update person set first_name = ?, last_name = ?, middle_name = ? " +
             "where person_id = ?;";
     private DataSource dataSource;
-    public DbService(@Autowired DataSource dataSource) {
+    @Autowired
+    public DbService( DataSource dataSource) {
         this.dataSource = dataSource;
     }
 

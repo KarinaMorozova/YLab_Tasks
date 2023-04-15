@@ -22,19 +22,15 @@ import java.util.concurrent.TimeoutException;
  */
 @Component
 public class DbController {
-    ConnectionFactory connectionFactory;
-    DbService dbService;
-    String exchangeName;
-    String queueName;
-    String routingKey;
+    private ConnectionFactory connectionFactory;
+    private DbService dbService;
+    static final String queueName = "westeros-queue";
+    static final String exchangeName = "exc";
+    static final String routingKey = "key";
 
-    public DbController(@Autowired ConnectionFactory connectionFactory, @Autowired DbService dbService,
-                        @Autowired String exchangeName, @Autowired String queueName, @Autowired String routingKey) {
+    public DbController(@Autowired ConnectionFactory connectionFactory, @Autowired DbService dbService) {
         this.connectionFactory = connectionFactory;
         this.dbService = dbService;
-        this.queueName = queueName;
-        this.exchangeName = exchangeName;
-        this.routingKey = routingKey;
     }
 
     public void listen() {

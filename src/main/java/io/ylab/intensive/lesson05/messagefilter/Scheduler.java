@@ -14,8 +14,9 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class Scheduler {
-    Processor processor;
-    public Scheduler(@Autowired Processor processor) {
+    private Processor processor;
+    @Autowired
+    public Scheduler(Processor processor) {
         this.processor = processor;
     }
 

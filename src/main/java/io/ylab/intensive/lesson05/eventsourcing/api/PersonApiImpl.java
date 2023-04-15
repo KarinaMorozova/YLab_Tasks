@@ -32,20 +32,14 @@ import java.util.concurrent.TimeoutException;
 public class PersonApiImpl implements PersonApi {
     private static final String FIND_BY_KEY = "select ps.* from person ps where ps.person_id = %d;";
     private static final String FIND_ALL = "select p.* from person p";
-    ConnectionFactory connectionFactory;
-    DataSource dataSource;
-    String queueName;
-    String exchangeName;
-    String routingKey;
+    private ConnectionFactory connectionFactory;
+    private DataSource dataSource;
+    static final String queueName = "westeros-queue";
 
-
-    public PersonApiImpl(@Autowired ConnectionFactory connectionFactory, @Autowired DataSource dataSource,
-                         @Autowired String exchangeName, @Autowired String queueName, @Autowired String routingKey) {
+    @Autowired
+    public PersonApiImpl(ConnectionFactory connectionFactory, DataSource dataSource) {
         this.connectionFactory = connectionFactory;
         this.dataSource = dataSource;
-        this.queueName = queueName;
-        this.exchangeName = exchangeName;
-        this.routingKey = routingKey;
     }
 
     @Override
