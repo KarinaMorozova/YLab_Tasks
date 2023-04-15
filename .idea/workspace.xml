@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b115fbeb-4b0f-460d-ae44-21af78116e64" name="Changes" comment="Init commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b115fbeb-4b0f-460d-ae44-21af78116e64" name="Changes" comment="Project structure changed">
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/ylab/intensive/lesson05/eventsourcing/api/PersonApiImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ylab/intensive/lesson05/eventsourcing/api/PersonApiImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/ylab/intensive/lesson05/eventsourcing/db/DbController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ylab/intensive/lesson05/eventsourcing/db/DbController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/ylab/intensive/lesson05/messagefilter/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ylab/intensive/lesson05/messagefilter/Demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/ylab/intensive/lesson05/messagefilter/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ylab/intensive/lesson05/messagefilter/Receiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/ylab/intensive/lesson05/messagefilter/Sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ylab/intensive/lesson05/messagefilter/Sender.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -54,42 +58,50 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/IDEA_project/Simple Chatty Bot/Simple Chatty Bot&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/IDEA_project/YLab_Tasks/src/main/java/my/ylab/homework05/eventsourcing&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.16796875&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
-  },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
-    ]
+    &quot;settings.editor.selected.configurable&quot;: &quot;Console&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;e464a028bef6a36381449c715134cedc&quot;
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\IDEA_project\YLab_Tasks\src\main\java\my\ylab\homework05\eventsourcing" />
+      <recent name="C:\IDEA_project\YLab_Tasks\src\main\java\my\ylab\homework05" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\IDEA_project\YLab_Tasks\src\main\java\my\ylab\homework04\pictures" />
-      <recent name="C:\IDEA_project\YLab_Tasks" />
-      <recent name="C:\IDEA_project\YLab_Tasks\src\main\java\my\ylab\homework04\eventsourcing" />
-      <recent name="C:\IDEA_project\YLab_Tasks\src\main\java\my\ylab\homework04" />
-      <recent name="C:\IDEA_project\YLab_Tasks\src\main\java\my\ylab\homework04\filesort\resources" />
+      <recent name="C:\IDEA_project\YLab_Tasks\src\main\java\io\ylab\intensive\homework04\pictures" />
+      <recent name="C:\IDEA_project\YLab_Tasks\src\main\java\io\ylab\intensive\homework04\filesort\resources" />
+      <recent name="C:\IDEA_project\YLab_Tasks\src\main\java\io\ylab\intensive\homework03" />
+      <recent name="C:\IDEA_project\YLab_Tasks\src\main\java\io\ylab\intensive\homework02" />
+      <recent name="C:\IDEA_project\YLab_Tasks\src\main\java\my\ylab\homework01" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="io.ylab.intensive.homework02.validator" />
+      <recent name="io.ylab.intensive.homework02.complex" />
+      <recent name="io.ylab.intensive.homework01" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="my.ylab" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="my.ylab.homework05.eventsourcing.api" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.ApiApp">
+  <component name="RunManager" selected="Application.SQLQueryExtenderTest">
     <configuration name="ApiApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="my.ylab.homework04.eventsourcing.api.ApiApp" />
+      <option name="MAIN_CLASS_NAME" value="io.ylab.intensive.lesson05.eventsourcing.api.ApiApp" />
       <module name="YLab_Tasks" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="my.ylab.homework04.eventsourcing.api.*" />
+          <option name="PATTERN" value="io.ylab.intensive.lesson05.eventsourcing.api.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -98,11 +110,11 @@
       </method>
     </configuration>
     <configuration name="DbApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="my.ylab.homework04.eventsourcing.db.DbApp" />
+      <option name="MAIN_CLASS_NAME" value="io.ylab.intensive.lesson05.eventsourcing.db.DbApp" />
       <module name="YLab_Tasks" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="my.ylab.homework04.eventsourcing.db.*" />
+          <option name="PATTERN" value="io.ylab.intensive.lesson05.eventsourcing.db.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,11 +123,11 @@
       </method>
     </configuration>
     <configuration name="FileSorterTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="my.ylab.homework04.filesort.FileSorterTest" />
+      <option name="MAIN_CLASS_NAME" value="io.ylab.intensive.lesson04.filesort.FileSorterTest" />
       <module name="YLab_Tasks" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="my.ylab.homework04.filesort.*" />
+          <option name="PATTERN" value="io.ylab.intensive.lesson04.filesort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,12 +135,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MovieTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="my.ylab.homework04.movies.MovieTest" />
+    <configuration name="MessageFilterApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.ylab.intensive.lesson05.messagefilter.MessageFilterApp" />
       <module name="YLab_Tasks" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="my.ylab.homework04.movies.*" />
+          <option name="PATTERN" value="io.ylab.intensive.lesson05.messagefilter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -136,12 +148,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PersistentMapTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="my.ylab.homework04.persistentmap.PersistentMapTest" />
+    <configuration name="SQLQueryExtenderTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.ylab.intensive.lesson05.sqlquerybuilder.SQLQueryExtenderTest" />
       <module name="YLab_Tasks" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="my.ylab.homework04.persistentmap.*" />
+          <option name="PATTERN" value="io.ylab.intensive.lesson05.sqlquerybuilder.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -149,19 +161,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Application.ApiApp" />
-      <item itemvalue="Application.DbApp" />
-      <item itemvalue="Application.FileSorterTest" />
-      <item itemvalue="Application.PersistentMapTest" />
-      <item itemvalue="Application.MovieTest" />
-    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SQLQueryExtenderTest" />
+        <item itemvalue="Application.MessageFilterApp" />
         <item itemvalue="Application.ApiApp" />
         <item itemvalue="Application.DbApp" />
-        <item itemvalue="Application.MovieTest" />
-        <item itemvalue="Application.PersistentMapTest" />
         <item itemvalue="Application.FileSorterTest" />
       </list>
     </recent_temporary>
@@ -191,19 +196,23 @@
       <workItem from="1679476441826" duration="2021000" />
       <workItem from="1679566541256" duration="1923000" />
       <workItem from="1679597106964" duration="1247000" />
-      <workItem from="1679676031172" duration="4917000" />
-      <workItem from="1679694151838" duration="83000" />
-      <workItem from="1679696077450" duration="5118000" />
-      <workItem from="1679731355171" duration="38544000" />
-      <workItem from="1679818498320" duration="9432000" />
-      <workItem from="1679832948046" duration="17146000" />
-      <workItem from="1679863432415" duration="8188000" />
-      <workItem from="1679916807210" duration="1857000" />
-      <workItem from="1679998705549" duration="12205000" />
-      <workItem from="1680109691765" duration="285000" />
-      <workItem from="1680117080026" duration="34000" />
-      <workItem from="1680117880662" duration="15000" />
-      <workItem from="1680117925862" duration="18000" />
+      <workItem from="1680183238735" duration="91000" />
+      <workItem from="1680184083376" duration="1177000" />
+      <workItem from="1680185361496" duration="3193000" />
+      <workItem from="1680249953443" duration="8472000" />
+      <workItem from="1680336427703" duration="38855000" />
+      <workItem from="1680423959418" duration="16470000" />
+      <workItem from="1680510405901" duration="20590000" />
+      <workItem from="1680599550198" duration="3717000" />
+      <workItem from="1680616775983" duration="8000" />
+      <workItem from="1680616863655" duration="16102000" />
+      <workItem from="1680679084181" duration="4753000" />
+      <workItem from="1680770970457" duration="9197000" />
+      <workItem from="1680796848557" duration="379000" />
+      <workItem from="1680797230757" duration="2879000" />
+      <workItem from="1680882233249" duration="1858000" />
+      <workItem from="1680978724434" duration="799000" />
+      <workItem from="1681599057334" duration="2774000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1678091046946</created>
@@ -262,13 +271,90 @@
       <updated>1679435350441</updated>
     </task>
     <task id="LOCAL-00009" summary="Init commit">
-      <created>1680019059659</created>
+      <created>1680352185929</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1680019059659</updated>
+      <updated>1680352185929</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Init commit">
+      <created>1680352343070</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1680352343070</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Init commit">
+      <created>1680365226857</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1680365226857</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Init commit">
+      <created>1680376292730</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1680376292730</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Init commit">
+      <created>1680376461145</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1680376461145</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Init commit">
+      <created>1680390534288</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1680390534288</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Init commit">
+      <created>1680395099747</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1680395099747</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Init commit">
+      <created>1680636670000</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1680636670000</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Init commit">
+      <created>1680651859564</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1680651859564</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Init commit">
+      <created>1680683229087</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1680683229087</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Project structure changed">
+      <created>1680795006303</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1680795006303</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Project structure changed">
+      <created>1681601671458</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1681601671458</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,7 +375,27 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Fixed" />
     <MESSAGE value="Init commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init commit" />
+    <MESSAGE value="Project structure changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project structure changed" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalStateException" package="java.lang" />
+          <option name="timeStamp" value="54" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/io/ylab/intensive/lesson05/messagefilter/MessageFilterApp.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/YLab_Tasks$SequencesTest.ic" NAME="SequencesTest Coverage Results" MODIFIED="1678723676474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -306,6 +412,9 @@
     </SUITE>
     <SUITE FILE_PATH="coverage/YLab_Tasks$ComplexNumbersTest.ic" NAME="ComplexNumbersTest Coverage Results" MODIFIED="1678724900352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>my.ylab.homework02.complex.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/YLab_Tasks$ApiApp.ic" NAME="ApiApp Coverage Results" MODIFIED="1680375432034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>my.ylab.homework05.eventsourcing.api.*</FILTER>
     </SUITE>
   </component>
 </project>
