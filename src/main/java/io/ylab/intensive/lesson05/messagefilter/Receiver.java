@@ -23,7 +23,7 @@ import java.util.concurrent.TimeoutException;
 @Component
 public class Receiver {
     ConnectionFactory connectionFactory;
-    static final String inputQueue = "input";
+    private static final String inputQueue = "input";
 
     @Autowired
     public Receiver(ConnectionFactory connectionFactory) {

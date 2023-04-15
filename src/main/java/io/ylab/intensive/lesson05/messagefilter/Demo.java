@@ -25,7 +25,7 @@ public class Demo {
             "Жопа есть, а слова нет", "fuck fuck! fuck? fucker; fucking, fuck\n fucking\n !fucker! Fucking fucK",
             "По хую мне"};
 
-    static final String inputQueue = "input";
+    private static final String inputQueue = "input";
 
     private ConnectionFactory connectionFactory;
 

@@ -34,7 +34,7 @@ public class PersonApiImpl implements PersonApi {
     private static final String FIND_ALL = "select p.* from person p";
     private ConnectionFactory connectionFactory;
     private DataSource dataSource;
-    static final String queueName = "westeros-queue";
+    private static final String queueName = "westeros-queue";
 
     @Autowired
     public PersonApiImpl(ConnectionFactory connectionFactory, DataSource dataSource) {

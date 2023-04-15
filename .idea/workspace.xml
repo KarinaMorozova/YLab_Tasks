@@ -5,19 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b115fbeb-4b0f-460d-ae44-21af78116e64" name="Changes" comment="Project structure changed">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ylab/intensive/lesson05/eventsourcing/api/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ylab/intensive/lesson05/eventsourcing/api/Config.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/ylab/intensive/lesson05/eventsourcing/api/PersonApiImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ylab/intensive/lesson05/eventsourcing/api/PersonApiImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/ylab/intensive/lesson05/eventsourcing/db/DbController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ylab/intensive/lesson05/eventsourcing/db/DbController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ylab/intensive/lesson05/eventsourcing/db/DbService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ylab/intensive/lesson05/eventsourcing/db/DbService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ylab/intensive/lesson05/messagefilter/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ylab/intensive/lesson05/messagefilter/Config.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/ylab/intensive/lesson05/messagefilter/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ylab/intensive/lesson05/messagefilter/Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ylab/intensive/lesson05/messagefilter/Processor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ylab/intensive/lesson05/messagefilter/Processor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/ylab/intensive/lesson05/messagefilter/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ylab/intensive/lesson05/messagefilter/Receiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ylab/intensive/lesson05/messagefilter/Scheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ylab/intensive/lesson05/messagefilter/Scheduler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/ylab/intensive/lesson05/messagefilter/Sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ylab/intensive/lesson05/messagefilter/Sender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ylab/intensive/lesson05/messagefilter/resources/Transfer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ylab/intensive/lesson05/messagefilter/resources/Transfer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ylab/intensive/lesson05/sqlquerybuilder/SQLQueryBuilderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ylab/intensive/lesson05/sqlquerybuilder/SQLQueryBuilderImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,7 +212,7 @@
       <workItem from="1680797230757" duration="2879000" />
       <workItem from="1680882233249" duration="1858000" />
       <workItem from="1680978724434" duration="799000" />
-      <workItem from="1681599057334" duration="2441000" />
+      <workItem from="1681599057334" duration="2774000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1678091046946</created>
@@ -355,7 +347,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680795006303</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Project structure changed">
+      <created>1681601671458</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1681601671458</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

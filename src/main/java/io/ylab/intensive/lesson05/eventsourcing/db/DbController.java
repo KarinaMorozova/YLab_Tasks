@@ -24,9 +24,9 @@ import java.util.concurrent.TimeoutException;
 public class DbController {
     private ConnectionFactory connectionFactory;
     private DbService dbService;
-    static final String queueName = "westeros-queue";
-    static final String exchangeName = "exc";
-    static final String routingKey = "key";
+    private static final String queueName = "westeros-queue";
+    private static final String exchangeName = "exc";
+    private static final String routingKey = "key";
 
     public DbController(@Autowired ConnectionFactory connectionFactory, @Autowired DbService dbService) {
         this.connectionFactory = connectionFactory;

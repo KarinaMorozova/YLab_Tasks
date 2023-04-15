@@ -23,7 +23,7 @@ import java.util.concurrent.TimeoutException;
 public class Sender {
     private ConnectionFactory connectionFactory;
 
-    static final String outputQueue = "output";
+    private static final String outputQueue = "output";
 
     @Autowired
     public Sender(ConnectionFactory connectionFactory) {
